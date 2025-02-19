@@ -1,4 +1,4 @@
-package com.rbuddhar.PractiseQues.Numbers;
+package com.rbuddhar.practise_ques.numbers;
 
 import java.util.Scanner;
 
@@ -23,7 +23,8 @@ public class StarPatterns {
         Square(rows);
         System.out.println("Rhombus");
         Quadrilateral(rows);
-       // Diamond(rows);
+        System.out.println("Diamond");
+        Diamond(rows);
 
 
     }
@@ -104,6 +105,15 @@ public class StarPatterns {
         }
     }
     public static void Diamond(int n){
+        Pyramid(n);
+        for (int i = n; i >= 1; i--) {
+            for (int j = n; j >= i; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print("* ");
+            }System.out.println();
+        }
 
     }
 }

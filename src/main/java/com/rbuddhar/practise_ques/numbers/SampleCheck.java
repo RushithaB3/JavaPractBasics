@@ -1,7 +1,7 @@
-package com.rbuddhar.PractiseQues.Numbers;
+package com.rbuddhar.practise_ques.numbers;
 
 import java.util.Scanner;
-import java.util.Scanner;
+
 public class SampleCheck {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
