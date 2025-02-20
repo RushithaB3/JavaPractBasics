@@ -2,7 +2,7 @@ package com.rbuddhar.practise_ques.numbers;
 
 import java.util.Scanner;
 
-public class PrintN_Numbers_for_while {
+public class PrintNNumbersForWhile {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter number: ");
