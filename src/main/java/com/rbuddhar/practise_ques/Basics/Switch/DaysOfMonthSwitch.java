@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.numbers.Switch;
+package com.rbuddhar.practise_ques.Basics.Switch;
 
 public class DaysOfMonthSwitch {
     public static void main(String[] args) {

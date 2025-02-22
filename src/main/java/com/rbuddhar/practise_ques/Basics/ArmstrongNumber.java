@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.numbers;
+package com.rbuddhar.practise_ques.Basics;
 
 import java.util.Scanner;
 
