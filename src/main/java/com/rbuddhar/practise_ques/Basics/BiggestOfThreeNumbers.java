@@ -15,6 +15,6 @@ public class BiggestOfThreeNumbers {
 
     }
     public static int findBiggestOfThreeNumbers(int a, int b, int c) {
-        return a > b ? a : b > c ? b : c > a ? c : a;
+        return a > b ? a : b > c ? b : Math.max(c, a);
     }
 }

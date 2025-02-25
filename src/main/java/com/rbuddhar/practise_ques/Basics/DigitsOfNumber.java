@@ -14,6 +14,8 @@ public class DigitsOfNumber {
         System.out.println("reverse of "+number+" is "+ReverseNumber(number));
         palindrome(number);
 
+        System.out.println("sum till single digit of "+number+" is "+SingleDigitSum(number));
+
 
     }
 
@@ -48,5 +50,14 @@ public class DigitsOfNumber {
         } else{
             System.out.println(number+" is not a palindrome");
         }
+    }
+
+    public static int SingleDigitSum(int n) {
+        int sum = 0;
+        n = SumOfDigits(n);
+        if(NumberOfDigits(n)!=1){
+            sum = SumOfDigits(n);
+        }
+        return sum;
     }
 }
