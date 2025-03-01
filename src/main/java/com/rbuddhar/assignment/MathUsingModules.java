@@ -1,4 +1,4 @@
-package com.rbuddhar.Assignment;
+package com.rbuddhar.assignment;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ public class MathUsingModules {
         System.out.print("Enter the number: ");
         int number = input.nextInt();
         if(checkPrime(number)) {
-            System.out.println("3Prime number");
+            System.out.println("Prime number");
         }else{
-            System.out.println("Not Prime number");
+            System.out.println("Not prime number");
         }
 
     }
@@ -25,7 +25,7 @@ public class MathUsingModules {
         }
         return true;
     }
-    public static int PrimeCount(int lb, int ub) {
+    public static int primeCount(int lb, int ub) {
         int count = 0;
         for(int i=lb; i<=ub; i++) {
             if(checkPrime(i)) {
@@ -36,7 +36,7 @@ public class MathUsingModules {
     }
     public static int[] getPrime(int lb, int ub) {
         int[] arr=new int[0];
-        int PrimeCount = PrimeCount(lb, ub);
+        int PrimeCount = primeCount(lb, ub);
         if(PrimeCount != 0) {
             int index = 0;
             arr = new int[PrimeCount];
@@ -48,7 +48,7 @@ public class MathUsingModules {
         }return arr;
     }
 
-    public static boolean IsEven(int number) {
+    public static boolean isEven(int number) {
         return number % 2 == 0;
     }
 
@@ -66,7 +66,7 @@ public class MathUsingModules {
         return fact;
     }
 
-    public static int SumOfFirstN_NaturalNumbers(int number) {
+    public static int sumOfFirstN_NaturalNumbers(int number) {
         int sum =1;
         for(int i=0; i<=number; i++) {
             sum += i;
@@ -74,7 +74,7 @@ public class MathUsingModules {
         return sum;
     }
 
-    public static int SumOfFirstN_EvenNumbers(int number) {
+    public static int sumOfFirstN_EvenNumbers(int number) {
         int sum =1;
         for(int i=0; i<=number; i++) {
             if(number%2==0) {
@@ -83,7 +83,7 @@ public class MathUsingModules {
         }
         return sum;
     }
-    public static int SumOfFirstN_OddNumbers(int number) {
+    public static int sumOfFirstN_OddNumbers(int number) {
         int sum = 1;
         for (int i = 1; i <= number; i++) {
             if (number % 2 != 0) {

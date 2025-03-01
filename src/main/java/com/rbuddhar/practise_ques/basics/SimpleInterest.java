@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -11,9 +11,9 @@ public class SimpleInterest {
         int rate = scanner.nextInt();
         System.out.print("Enter number of years: ");
         int time = scanner.nextInt();
-        System.out.print("Your Interest is: "+CalculateSI(principal, rate, time ));
+        System.out.print("Your Interest is: "+ calculateSI(principal, rate, time ));
     }
-    public static int CalculateSI(int p, int r,int t) {
+    public static int calculateSI(int p, int r, int t) {
         int si = (p * r * t) / 100;
         return si;
     }

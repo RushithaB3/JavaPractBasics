@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class BiggestOfThreeNumbers {
         int num2 = input.nextInt();
         System.out.print("Enter the third number: ");
         int num3 = input.nextInt();
-        System.out.print("Biggest of "+num1+","+num2+","+num3+" is : "+findBiggestOfThreeNumbers(num1,num2,num3));
+        System.out.print("biggest of "+num1+","+num2+","+num3+" is : "+findBiggestOfThreeNumbers(num1,num2,num3));
 
     }
     public static int findBiggestOfThreeNumbers(int a, int b, int c) {

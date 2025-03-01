@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -7,9 +7,9 @@ public class PositiveOrNegative {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number: ");
         int number = input.nextInt();
-        PositiveOrNot(number);
+        positiveOrNot(number);
     }
-    public static void PositiveOrNot(int number) {
+    public static void positiveOrNot(int number) {
         if (number < 0) {
             System.out.println(number+ " is Negative number");
         }else if (number == 0) {

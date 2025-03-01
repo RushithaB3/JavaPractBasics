@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -7,10 +7,10 @@ public class EvenOrOdd {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number: ");
         int number = input.nextInt();
-        IsEven(number);
+        isEven(number);
 
     }
-    public static void IsEven(int number) {
+    public static void isEven(int number) {
         if (number < 0) {
             if (number % 2 == 0) {
                 System.out.println(number + " is even negative");

@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -8,16 +8,16 @@ public class ArmstrongNumber {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
 
-         if(CheckArmstrongNumber(number)){
+         if(checkArmstrongNumber(number)){
              System.out.println(number + " is an Armstrong number");
          }else{
              System.out.println(number + " is not an Armstrong number");
          }
 
          System.out.print("Armstrong numbers upto "+number+": ");
-         ArmstrongNumberUptoN(number);
+         armstrongNumberUptoN(number);
     }
-    public static int NumberOfDigits(int n) {
+    public static int numberOfDigits(int n) {
         int count = 0;
         while (n > 0) {
             n /= 10;
@@ -26,21 +26,21 @@ public class ArmstrongNumber {
         return count;
     }
 
-    public static boolean CheckArmstrongNumber(int n) {
+    public static boolean checkArmstrongNumber(int n) {
         int d,a;
         int temp = n;
         int sum = 0;
         while (n > 0) {
             d = n % 10;
-            a = (int)Math.pow(d,NumberOfDigits(temp));
+            a = (int)Math.pow(d,numberOfDigits(temp));
             n /= 10;
             sum += a;
         } return sum == temp;
     }
 
-    public static void ArmstrongNumberUptoN(int n) {
+    public static void armstrongNumberUptoN(int n) {
         for (int i = 1; i <= n; i++) {
-            if(CheckArmstrongNumber(i)){
+            if(checkArmstrongNumber(i)){
                 System.out.print(i+" ");
             }
         }

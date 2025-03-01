@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -13,10 +13,10 @@ public class PrimeNumber {
             System.out.println(num + " is not a prime number");
         }
 
-        System.out.print("Prime numbers upto "+num+": ");
-        UptoNisPrime(num);
+        System.out.print("prime numbers upto "+num+": ");
+        uptoNisPrime(num);
 
-        System.out.println("\nNo of Prime numbers upto "+num+": "+isPrimeCount(num));
+        System.out.println("\nNo of prime numbers upto "+num+": "+isPrimeCount(num));
     }
     public static boolean isPrime(int num) {
         if(num > 1){
@@ -29,7 +29,7 @@ public class PrimeNumber {
         return true;
     }
 
-    public static void UptoNisPrime(long num) {
+    public static void uptoNisPrime(long num) {
         int i;
         for( i = 2; i <= num; i++){
             if(isPrime(i)){

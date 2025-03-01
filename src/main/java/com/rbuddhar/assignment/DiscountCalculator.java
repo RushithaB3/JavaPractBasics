@@ -1,4 +1,4 @@
-package com.rbuddhar.Assignment;
+package com.rbuddhar.assignment;
 
 import java.util.Scanner;
 

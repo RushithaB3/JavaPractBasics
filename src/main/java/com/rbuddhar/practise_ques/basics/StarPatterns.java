@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -7,28 +7,28 @@ public class StarPatterns {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter number of rows : ");
         int rows = input.nextInt();
-        System.out.println("Pyramid");
-        Pyramid(rows);
-        System.out.println("Inverted Pyramid");
-        InvertedPyramid(rows);
+        System.out.println("pyramid");
+        pyramid(rows);
+        System.out.println("Inverted pyramid");
+        invertedPyramid(rows);
         System.out.println("Left pyramid");
-        LeftTriangle(rows);
+        leftTriangle(rows);
         System.out.println("Left Inverted pyramid");
-        InvertedLeftTriangle(rows);
+        invertedLeftTriangle(rows);
         System.out.println("Right pyramid");
-        RightTriangle(rows);
+        rightTriangle(rows);
         System.out.println("Right Inverted pyramid");
-        InvertedRightTriangle(rows);
-        System.out.println("Square");
-        Square(rows);
+        invertedRightTriangle(rows);
+        System.out.println("square");
+        square(rows);
         System.out.println("Rhombus");
-        Quadrilateral(rows);
+        quadrilateral(rows);
         System.out.println("Diamond");
-        Diamond(rows);
+        diamond(rows);
 
 
     }
-    public static void Pyramid(int n) {
+    public static void pyramid(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = i; j <=n- 1; j++) {
                 System.out.print(" ");
@@ -38,7 +38,7 @@ public class StarPatterns {
             }System.out.println();
         }
     }
-    public static void InvertedPyramid(int n) {
+    public static void invertedPyramid(int n) {
         for (int i = n; i >= 1; i--) {
             for (int j = n-1; j >= i; j--) {
                 System.out.print(" ");
@@ -48,14 +48,14 @@ public class StarPatterns {
             }System.out.println();
         }
     }
-    public static void LeftTriangle(int n) {
+    public static void leftTriangle(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }System.out.println();
         }
     }
-    public static void InvertedLeftTriangle(int n) {
+    public static void invertedLeftTriangle(int n) {
         for (int i = n; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
@@ -63,7 +63,7 @@ public class StarPatterns {
         }
     }
 
-    public static void RightTriangle(int n) {
+    public static void rightTriangle(int n) {
         int i,j;
         for (i = 1 ; i <= n; i++) {
             for(j=i; j<= n-1 ; j++) {
@@ -75,7 +75,7 @@ public class StarPatterns {
         }
     }
 
-    public static void InvertedRightTriangle(int n) {
+    public static void invertedRightTriangle(int n) {
         int i,j;
         for (i = n ; i >= 1; i--) {
             for(j=n-1; j>= i ; j--) {
@@ -87,7 +87,7 @@ public class StarPatterns {
         }
     }
 
-    public static void Square(int n) {
+    public static void square(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 System.out.print("* ");
@@ -95,7 +95,7 @@ public class StarPatterns {
         }
     }
 
-    public static void Quadrilateral(int n) {
+    public static void quadrilateral(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n-i; j++) {
                 System.out.print(" ");
@@ -104,8 +104,8 @@ public class StarPatterns {
             }System.out.println();
         }
     }
-    public static void Diamond(int n){
-        Pyramid(n);
+    public static void diamond(int n){
+        pyramid(n);
         for (int i = n; i >= 1; i--) {
             for (int j = n; j >= i; j--) {
                 System.out.print(" ");

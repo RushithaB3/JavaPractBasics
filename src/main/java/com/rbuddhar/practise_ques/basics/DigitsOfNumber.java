@@ -1,4 +1,4 @@
-package com.rbuddhar.practise_ques.Basics;
+package com.rbuddhar.practise_ques.basics;
 
 import java.util.Scanner;
 
@@ -9,17 +9,17 @@ public class DigitsOfNumber {
         int number = scanner.nextInt();
 
 
-        System.out.println("The sum of digits is " + SumOfDigits(number));
-        System.out.println("Number of digits in number is " + NumberOfDigits(number));
-        System.out.println("reverse of "+number+" is "+ReverseNumber(number));
+        System.out.println("The sum of digits is " + sumOfDigits(number));
+        System.out.println("Number of digits in number is " + numberOfDigits(number));
+        System.out.println("reverse of "+number+" is "+ reverseNumber(number));
         palindrome(number);
 
-        System.out.println("sum till single digit of "+number+" is "+SingleDigitSum(number));
+        System.out.println("sum till single digit of "+number+" is "+ singleDigitSum(number));
 
 
     }
 
-    public static int SumOfDigits(int number) {
+    public static int sumOfDigits(int number) {
         int d;
         int sum = 0;
         while (number > 0) {
@@ -29,14 +29,14 @@ public class DigitsOfNumber {
         }
         return sum;
     }
-    public static int NumberOfDigits(int number) {
+    public static int numberOfDigits(int number) {
         int count = 0;
         while (number > 0) {
             number /= 10;
             count++;
         }return count;
     }
-    public static int ReverseNumber(int number) {
+    public static int reverseNumber(int number) {
         int reversed = 0;
         while (number > 0) {
             reversed = reversed * 10 + number % 10;
@@ -45,18 +45,18 @@ public class DigitsOfNumber {
     }
 
     public static void palindrome(int number) {
-        if( ReverseNumber(number)==number){
+        if( reverseNumber(number)==number){
             System.out.println(number+" is a palindrome");
         } else{
             System.out.println(number+" is not a palindrome");
         }
     }
 
-    public static int SingleDigitSum(int n) {
+    public static int singleDigitSum(int n) {
         int sum = 0;
-        n = SumOfDigits(n);
-        if(NumberOfDigits(n)!=1){
-            sum = SumOfDigits(n);
+        n = sumOfDigits(n);
+        if(numberOfDigits(n)!=1){
+            sum = sumOfDigits(n);
         }
         return sum;
     }
