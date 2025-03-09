@@ -1,6 +1,6 @@
-package com.rbuddhar.arrays;
+package com.rbuddhar.Strings;
 
-public class ArrayDemo {
+public class StringsDemo {
     public static void main(String[] args) {
         //1st way to create String
         String s1 = "Hello,";
