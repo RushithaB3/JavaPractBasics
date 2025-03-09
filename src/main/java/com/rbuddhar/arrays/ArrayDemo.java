@@ -12,6 +12,9 @@ public class ArrayDemo {
 
         String s4 = new String("Let's learn ");
         String s5 = new String("strings");
+        String s6 = new String("in java programming from basics");
+        String s12 ="Hello,";
+        String s13 ="Hello";
 
         //display 3 strings
         System.out.print(s1);
@@ -58,5 +61,40 @@ public class ArrayDemo {
          if s3 is less than s4 returns negative number.
          */
 
+        //get chars
+        System.out.println("----------------------------------------------------------\nCopying a string into an array");
+        s4.getChars(6,10, arr,0);
+        System.out.println(arr);
+
+        //Split method
+        System.out.println("----------------------------------------------------------\nSplit method");
+        String s7[];
+        s7 = s6.split(" "); // here space is delimiter
+        for(int i = 0; i< s7.length; i++) {
+            System.out.println(s7[i]);
+        }
+
+        //String Comparison (compares reference of the string objects)
+        System.out.println("----------------------------------------------------------\nString comparison with Operator when new object is created");
+        if(s3==s5) System.out.println(s3+" and "+s5+" Both are same");
+        else System.out.println(s3+" and "+s5+" Both are different");
+
+        System.out.println("----------------------------------------------------------\nString comparison with Operator without creating new object");
+        if(s1 == s12) System.out.println(s1+" and "+s12+" Both are same");
+        else System.out.println(s1+" and "+s12+" Both are different");
+        System.out.println("----------------------------------------------------------\nString comparison with Operator without creating new object but missing last character of string");
+        if(s1 == s13) System.out.println(s1+" and "+s13+" Both are same");
+        else System.out.println(s1+" and "+s13+" Both are different");
+
+        //String Comparison (compares Content of the string objects)
+        System.out.println("----------------------------------------------------------\nString comparison equals method");
+        if(s3.equalsIgnoreCase(s5)) System.out.println(s3+" and "+s5+" Both are same");
+        else System.out.println(s3+" and "+s5+" Both are different");
+
+
+
+
+
     }
+
 }
