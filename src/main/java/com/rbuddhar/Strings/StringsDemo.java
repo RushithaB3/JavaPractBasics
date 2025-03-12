@@ -6,7 +6,7 @@ public class StringsDemo {
         String s1 = "Hello,";
         //2nd way to create string
         String s2 = new String(" Welcome!\n");
-        //3rd wat to create string
+        //3rd way to create string
         char arr[] = {'S','t','r','i','n','g','s'};
         String s3 = new String(arr);
 
